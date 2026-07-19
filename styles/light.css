@@ -5,8 +5,16 @@
 */
 
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --accent-color: var(--pink);
+  --bgcolor: var(--white); 
+  --title-accent-color: var(--pinkwhite);
+  --nav-accent-color: var(--grey);
+  --text-color: var(--grey);
+  --cover: url("../images/cover-image-light.png");
 }
+
+:root.theme-light .rec {
+  opacity: 0;
+  pointer-events: none;
+}
+

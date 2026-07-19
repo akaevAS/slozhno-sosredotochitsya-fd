@@ -1,4 +1,42 @@
+:root {
+  --purple: #DB00FF;
+  --redpink: #FF0070;
+  --blueblack: #000028;
+  --lightpink: #F1B2CE;
+  --pink: #FF8DCB;
+  --white: #fff1f7; 
+  --pinkwhite: #FFC2E6;
+  --grey: #353430;
+
+}
 /*
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+@media (prefers-color-scheme: dark) {
+  :root {
+  --accent-color: var(--redpink);
+  --bgcolor: var(--blueblack);
+  --title-accent-color: var(--purple);
+  --nav-accent-color: var(--redpink);
+  --text-color: var(--lightpink);
+  --cover: url("../images/cover-image-dark.png");
+  --title-decor-color: var(--blueblack);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+  --accent-color: var(--pink);
+  --bgcolor: var(--white); 
+  --title-accent-color: var(--pinkwhite);
+  --nav-accent-color: var(--grey);
+  --text-color: var(--grey);
+  --cover: url("../images/cover-image-light.png");
+  }
+
+  :root .rec {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
