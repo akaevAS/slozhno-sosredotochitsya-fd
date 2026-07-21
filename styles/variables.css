@@ -1,4 +1,5 @@
 :root {
+  --dark-cover: url("../images/cover-image-dark.png");
   --purple: #DB00FF;
   --redpink: #FF0070;
   --blueblack: #000028;
